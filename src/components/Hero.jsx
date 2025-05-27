@@ -1,5 +1,7 @@
+/* eslint-disable no-unused-vars */
 import React from 'react'
-import { IoStar } from 'react-icons/io5'
+import { IoStar } from 'react-icons/io5';
+import heroImage from "../assets/hero-image.png"
 
 const Hero = () => {
     return (
@@ -27,8 +29,10 @@ const Hero = () => {
             </div>
 
             {/* Right Column  */}
-            <div className='w-full md:w:1/2 '>
-                Right
+            <div className='w-full md:w:1/2 mt-16 md:mt-0 pl-0 md:pl-12'>
+                <div className='relative'>
+                    <img src={heroImage} alt="hero image" className='rounded-lg relative z-10 hover:scale-[1.02] transition-transform duration-300'/>
+                </div>
             </div>
         </section>
     )
