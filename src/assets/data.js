@@ -16,7 +16,7 @@ export const features = [
 
 //   features section
 
-  const features = [
+const features = [
     {
       icon: "🔍", 
       title: "Find out what you need",
@@ -32,7 +32,7 @@ export const features = [
       title: "We get to work fast",
       description: "Protocols apart from engage models, pricing billing"
     }
-  ];
+];
 
 //   services section
 const services = [

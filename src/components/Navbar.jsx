@@ -57,7 +57,7 @@ const Navbar = () => {
                         <div className='container mx-auto px-4 space-y-4'>
                             {
                                 navLinks.map((link, index) => (
-                                    <a key={index} onClick={() => {
+                                    <a key={index} onClick={() => { 
                                         setActiveLink(link.href);
                                         setIsMenuOpen(false);
                                         }} 
