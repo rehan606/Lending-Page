@@ -5,6 +5,7 @@ import './App.css'
 import CompanyLogo from './components/CompanyLogo'
 import Hero from './components/Hero'
 import Navbar from './components/Navbar'
+import PurposeSection from './components/PurposeSection'
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -17,6 +18,7 @@ function App() {
           <Navbar></Navbar>
           <Hero></Hero>
           <CompanyLogo></CompanyLogo>
+          <PurposeSection></PurposeSection>
         </div>
       </main>
       
