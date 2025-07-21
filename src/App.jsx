@@ -5,11 +5,13 @@ import FeaturesSection from './components/FeaturesSection'
 import Hero from './components/Hero'
 import Monitor from './components/Monitor'
 import Navbar from './components/Navbar'
+import PricingSection from './components/PricingSection'
 import PurposeSection from './components/PurposeSection'
 import Schedule from './components/Schedule'
+import ServiceSection from './components/ServiceSection'
 
 function App() {
-  // const [count, setCount] = useState(0)
+
 
   return (
     <>
@@ -23,6 +25,8 @@ function App() {
           <FeaturesSection/>
           <Schedule/>
           <Monitor/>
+          <PricingSection/>
+          <ServiceSection/>
         </div>
       </main>
       
