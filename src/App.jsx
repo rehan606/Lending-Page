@@ -1,10 +1,9 @@
-// import { useState } from 'react'
-// import reactLogo from './assets/react.svg'
-// import viteLogo from '/vite.svg'
+
 import './App.css'
 import CompanyLogo from './components/CompanyLogo'
 import FeaturesSection from './components/FeaturesSection'
 import Hero from './components/Hero'
+import Monitor from './components/Monitor'
 import Navbar from './components/Navbar'
 import PurposeSection from './components/PurposeSection'
 import Schedule from './components/Schedule'
@@ -23,6 +22,7 @@ function App() {
           <PurposeSection/>
           <FeaturesSection/>
           <Schedule/>
+          <Monitor/>
         </div>
       </main>
       

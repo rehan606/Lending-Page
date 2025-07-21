@@ -4,15 +4,15 @@ import { IoIosArrowRoundForward } from 'react-icons/io'
 
 const Schedule = () => {
   return (
-    <section className="px-4 py-16 md:py-24 max-w-7xl mx-auto ">
+    <section className="px-4 py-12 md:py-4 max-w-7xl mx-auto ">
         <div className='flex flex-col md:flex-row items-center justify-between gap-12 md:gap-24'>
             
             <div className='md:w-1/2 w-full'>
-                <img src={scheduleImage} alt="schedule_image" className='w-full h-auto' />
+                <img src={scheduleImage} alt="schedule_image" className='w-full  h-auto' />
             </div>
 
             <div className='md:w-1/2 w-full '>
-                <p className='text-gray-600 mb-4 uppercase'>Schedule </p>
+                <p className=' mb-4 uppercase text-orange-500'>Schedule </p>
                 <h2 className='text-3xl md:text-4xl font-bold text-natural-900 mb-6'>
                     Streamline Your Business! <br /> With Smart Scheduling Solutions
                 </h2>
