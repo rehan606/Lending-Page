@@ -4,10 +4,10 @@
 import './App.css'
 import CompanyLogo from './components/CompanyLogo'
 import FeaturesSection from './components/FeaturesSection'
-import Features from './components/FeaturesSection'
 import Hero from './components/Hero'
 import Navbar from './components/Navbar'
 import PurposeSection from './components/PurposeSection'
+import Schedule from './components/Schedule'
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -22,6 +22,7 @@ function App() {
           <CompanyLogo/>
           <PurposeSection/>
           <FeaturesSection/>
+          <Schedule/>
         </div>
       </main>
       
