@@ -5,10 +5,6 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/navigation';
-
-// import './styles.css';
-
-// import required modules
 import {  Navigation} from 'swiper/modules';
 
 import { BsChevronLeft, BsChevronRight } from 'react-icons/bs';
@@ -18,7 +14,7 @@ const testimonials = [
       id: 1,
       name: "Robin Ayala Doe", 
       image: "https://randomuser.me/api/portraits/men/77.jpg",
-      text: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast.",
+      text: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Bookmarksgrove right at the coast.",
     },
     {
       id: 2,
@@ -63,7 +59,7 @@ const Testimonial = () => {
             </div>
 
             {/* Swiper slider */}
-            <div className='relative'>
+            <div className='relative max-w-6xl mx-auto px-4 '>
                 {/* swiper cards */}
 
                 <Swiper
@@ -93,10 +89,28 @@ const Testimonial = () => {
                     className="testimonial-swiper"
                 >
                     {testimonials.map((testimonial) => (
-                        <SwiperSlide key={testimonial.id} className='bg-white p-6 rounded-lg shadow-lg'>
-                            <img src={testimonial.image} alt={testimonial.name} className='w-16 h-16 rounded-full mb-4 mx-auto' />
-                            <h3 className='text-lg font-semibold mb-2'>{testimonial.name}</h3>
-                            <p className='text-gray-600'>{testimonial.text}</p>
+                        <SwiperSlide key={testimonial.id} className='bg-white p-6 rounded-lg shadow-lg h-full flex flex-col items-center justify-center mb-5 hover:shadow-xl  hover:shadow-blue-100 duration-300'>
+                            <div className='w-24 h-24 rounded-full overflow-hidden mb-4 mx-auto border-2 border-gray-200 '>
+                                <img src={testimonial.image} alt={testimonial.name} className='w-full h-full object-cover rounded-full' />
+                            </div>
+
+                            <div className='flex items-center justify-center mb-2'>
+                                {[...Array(5)].map((_, starIndex) => (
+                                    <svg
+                                        key={starIndex}
+                                        className={`w-5 h-5 inline-block ${starIndex < 4 ? 'text-yellow-500' : 'text-gray-300'}`}
+                                        fill="currentColor"
+                                        viewBox="0 0 20 20"
+                                    >
+                                        <path d="M10 15l-3.09 1.63.59-3.43L5 10l3.41-.49L10 6l1.59 3.51L15 10l-2.5 2.2.59 3.43L10 15z" />
+                                    </svg>
+                                ))}
+                            </div>
+
+                            <div className=' text-center  '>
+                                <h3 className='text-lg font-semibold mb-2'>{testimonial.name}</h3>
+                                <p className='text-gray-600'>{testimonial.text}</p>
+                            </div>
                         </SwiperSlide>
                     ))}
                      
@@ -105,12 +119,12 @@ const Testimonial = () => {
 
                 {/* custom button navigation */}
                 <div className='flex justify-center gap-4 mt-6'>
-                    <button className='w-12 h-12 bg-blue-500 rounded-full border-gray-200 shadow-lg flex items-center justify-center hover:bg-blue-600 hover:text-white transition-all duration-200 swiper-button-prev-custom'>
-                        <BsChevronLeft className='size-4 text-white' /> 
+                    <button className='w-12 h-12 group rounded-full border border-gray-600  shadow-lg flex items-center justify-center hover:bg-blue-600 hover:text-white transition-all duration-200 swiper-button-prev-custom'>
+                        <BsChevronLeft className='size-4 text-gray-600 group-hover:text-white' /> 
                     </button> 
 
-                    <button className='w-12 h-12 bg-blue-500 rounded-full border-gray-200 shadow-lg flex items-center justify-center hover:bg-blue-600 hover:text-white transition-all duration-200 swiper-button-prev-custom'>
-                        <BsChevronRight className='size-4 text-white' /> 
+                    <button className='w-12 h-12 group rounded-full border border-gray-600  shadow-lg flex items-center justify-center hover:bg-blue-600 hover:text-white transition-all duration-200 swiper-button-next-custom'>
+                        <BsChevronRight className='size-4 text-gray-600 group-hover:text-white' /> 
                     </button> 
                 </div>
                 
