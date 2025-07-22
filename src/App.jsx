@@ -11,6 +11,7 @@ import PurposeSection from './components/PurposeSection'
 import Schedule from './components/Schedule'
 import ServiceSection from './components/ServiceSection'
 import Testimonial from './components/Testimonial'
+import Footer from './components/Footer'
 
 function App() {
 
@@ -31,6 +32,7 @@ function App() {
           <ServiceSection/>
           <Testimonial/>
           <NewsLetter/>
+          <Footer/>
         </div>
       </main>
       

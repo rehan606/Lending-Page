@@ -6,6 +6,8 @@ const NewsLetter = () => {
         <section className=' container py-16 px-4 mx-auto sm:px-6 lg:px-8 '>
             <div className="bg-blue-600  rounded-2xl shadow-lg overflow-hidden  ">
                 <div className='relative md:px-16 py-16 px-6 md:py-24'>
+
+                    {/* folygon background slant  */}
                     <div className='absolute top-0 right-0 w-1/2 h-full bg-blue-700 clip-path-slant hidden md:block'></div>
 
                     <div className='relative flex flex-col md:flex-row items-center justify-between gap-6 md:gap-12'>
@@ -34,6 +36,8 @@ const NewsLetter = () => {
                     </div>
                 </div>
             </div>
+
+            {/* Custom CSS for slant background */}
             <style>
                 {`
                     .clip-path-slant {
