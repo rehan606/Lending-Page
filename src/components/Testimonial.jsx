@@ -44,7 +44,7 @@ const testimonials = [
       id: 6,
       name: "Emma Wilson",
       image: "https://randomuser.me/api/portraits/women/28.jpg",
-      text: "What impressed me most was how quickly they responded to my requests. The team is professional, knowledgeable, and truly cares about their customers' success.",
+      text: "What impressed me most was how quickly they responded to my requests. The team is professional, knowledgeable, and truly about their customers' success.",
     },
   
 ];
