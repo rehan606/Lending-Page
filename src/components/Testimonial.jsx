@@ -94,6 +94,8 @@ const Testimonial = () => {
                                 <img src={testimonial.image} alt={testimonial.name} className='w-full h-full object-cover rounded-full' />
                             </div>
 
+                            {/* Custom Review Stars */}
+
                             <div className='flex items-center justify-center mb-2'>
                                 {[...Array(5)].map((_, starIndex) => (
                                     <svg
