@@ -3,7 +3,7 @@ import { HiArrowRight } from 'react-icons/hi'
 
 const NewsLetter = () => {
     return (
-        <section className=' container py-16 px-4 mx-auto sm:px-6 lg:px-8 '>
+        <section className=' container py-16 px-4 mx-auto sm:px-6 lg:px-8 ' id='newsletter'>
             <div className="bg-blue-600  rounded-2xl shadow-lg overflow-hidden  ">
                 <div className='relative md:px-16 py-16 px-6 md:py-24'>
 

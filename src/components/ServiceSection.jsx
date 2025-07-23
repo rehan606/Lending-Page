@@ -33,7 +33,7 @@ const services = [
 
 const ServiceSection = () => {
     return (
-        <section className='py-20 container mx-auto px-4 sm:px-6 lg:px-8'>
+        <section className='py-20 container mx-auto px-4 sm:px-6 lg:px-8' id='services'>
             <div className='flex flex-col md:flex-row items-center justify-between gap-10 '>
                 <div className='md:w-1/3 w-full'>
                     <h2 className='text-3xl md:text-4xl font-bold  mb-6 md:w-4/5  '>Festure of support with new shape</h2> 
