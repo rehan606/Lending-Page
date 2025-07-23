@@ -1,5 +1,8 @@
 import React from 'react'
 import { HiArrowRight } from 'react-icons/hi'
+// eslint-disable-next-line no-unused-vars
+import { motion } from "framer-motion"
+import { fadeIn, textVariant } from '../utilities/motion';
 
 const NewsLetter = () => {
     return (
@@ -13,12 +16,27 @@ const NewsLetter = () => {
                     <div className='relative flex flex-col md:flex-row items-center justify-between gap-6 md:gap-12'>
                         {/* Left Content  */}
                         <div className='max-w-lg text-center md:text-left '>
-                            <h2 className='text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-4'>Subscribe to our newsletter</h2>
-                            <p className='text-white text-sm sm:text-base mb-6'>Stay updated with the latest news and exclusive offers.</p>
+                            <motion.h2 
+                                variants={textVariant(0.2)}
+                                initial="hidden"
+                                whileInView="show"
+                                className='text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-4'>Subscribe to our newsletter
+                            </motion.h2>
+
+                            <motion.p 
+                                variants={fadeIn('up', 0.3)}
+                                initial="hidden"
+                                whileInView="show"
+                                className='text-white text-sm sm:text-base mb-6'>Stay updated with the latest news and exclusive offers.
+                            </motion.p>
                         </div>
 
                         {/* Right Content  */}
-                        <div className='flex flex-col sm:flex-row items-center gap-4 sm:gap-0 w-full sm:w-auto'>
+                        <motion.div 
+                            variants={fadeIn('left', 0.4)}
+                            initial="hidden"
+                            whileInView="show"
+                            className='flex flex-col sm:flex-row items-center gap-4 sm:gap-0 w-full sm:w-auto'>
                             
                             <input
                                 type="email"
@@ -32,7 +50,7 @@ const NewsLetter = () => {
                             </button>
 
                             
-                        </div>
+                        </motion.div>
                     </div>
                 </div>
             </div>

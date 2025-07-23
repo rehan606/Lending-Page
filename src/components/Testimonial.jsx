@@ -9,6 +9,10 @@ import {  Navigation} from 'swiper/modules';
 
 import { BsChevronLeft, BsChevronRight } from 'react-icons/bs';
 
+// eslint-disable-next-line no-unused-vars
+import { motion } from "framer-motion"
+import { fadeIn, textVariant, } from '../utilities/motion';
+
 const testimonials = [
     {
       id: 1,
@@ -54,8 +58,17 @@ const Testimonial = () => {
     return (
         <section className='py-16 px-4 max-w-7xl mx-auto' id='testimonials'>
             <div className='text-center mb-12'>
-                <h2 className='text-3xl font-bold md:text-4xl mb-4'>What Our Clients Say</h2>
-                <p className=' text-gray-600 '>Don't just take our word for it. Here's what our clients have to say:</p>
+                <motion.h2 
+                    variants={textVariant(0.2)}
+                    initial="hidden"
+                    whileInView="show"
+                    className='text-3xl font-bold md:text-4xl mb-4'>What Our Clients Say
+                </motion.h2>
+                <motion.p 
+                    variants={fadeIn('up', 0.3)}
+                    initial="hidden"
+                    whileInView="show"
+                    className=' text-gray-600 '>Don't just take our word for it. Here's what our clients have to say:</motion.p>
             </div>
 
             {/* Swiper slider */}
@@ -89,7 +102,9 @@ const Testimonial = () => {
                     className="testimonial-swiper"
                 >
                     {testimonials.map((testimonial) => (
-                        <SwiperSlide key={testimonial.id} className='bg-white p-6 rounded-lg shadow-lg h-full flex flex-col items-center justify-center mb-5 hover:shadow-xl  hover:shadow-blue-100 duration-300'>
+                        <SwiperSlide key={testimonial.id} 
+                        
+                            className='bg-white p-6 rounded-lg shadow-lg h-full flex flex-col items-center justify-center mb-5 hover:shadow-xl  hover:shadow-blue-100 duration-300'>
                             <div className='w-24 h-24 rounded-full overflow-hidden mb-4 mx-auto border-2 border-gray-200 '>
                                 <img src={testimonial.image} alt={testimonial.name} className='w-full h-full object-cover rounded-full' />
                             </div>
@@ -110,8 +125,20 @@ const Testimonial = () => {
                             </div>
 
                             <div className=' text-center  '>
-                                <h3 className='text-lg font-semibold mb-2'>{testimonial.name}</h3>
-                                <p className='text-gray-600'>{testimonial.text}</p>
+                                <motion.h3 
+                                    variants={fadeIn('up' , 0.3)}
+                                    initial="hidden"
+                                    whileInView="show"
+                                    className='text-lg font-semibold mb-2'>{testimonial.name}
+                                </motion.h3>
+
+                                <motion.p 
+                                    variants={fadeIn('up', 0.4)}
+                                    initial="hidden"
+                                    whileInView="show"
+
+                                    className='text-gray-600'>{testimonial.text}
+                                </motion.p>
                             </div>
                         </SwiperSlide>
                     ))}

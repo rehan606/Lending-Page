@@ -1,4 +1,7 @@
 import React from 'react'
+// eslint-disable-next-line no-unused-vars
+import { motion } from "framer-motion"
+import { fadeIn, textVariant, } from '../utilities/motion';
 
 function PurposeSection() {
 
@@ -23,12 +26,27 @@ function PurposeSection() {
 
                     {/* Heading text  */}
                     <div>
-                        <p className="text-sm text-purple-600 font-medium uppercase mb-2">ACHIVE MORE</p>
-                        <h2 className="text-3xl md:w-4/5 w-full md:text-4xl font-bold text-gray-900" > Purpose of a convoy is to keep your team</h2>
+                        <motion.p 
+                            variants={fadeIn('right', 0.4)}
+                            initial="hidden"
+                            whileInView="show"
+                            className="text-sm text-purple-600 font-medium uppercase mb-2">ACHIVE MORE
+                        </motion.p>
+
+                        <motion.h2 
+                            variants={textVariant( 0.3)}
+                            initial="hidden"
+                            whileInView="show"
+                            className="text-3xl md:w-4/5 w-full md:text-4xl font-bold text-gray-900" > Purpose of a convoy is to keep your team
+                        </motion.h2>
                     </div>
 
                     {/* Bulllet points  */}
-                    <div className="col-span-2 grid grid-cols-1 md:grid-cols-2 justify-between gap-8">
+                    <motion.div 
+                        variants={fadeIn('up', 0.4)}
+                        initial="hidden"
+                        whileInView="show"
+                        className="col-span-2 grid grid-cols-1 md:grid-cols-2 justify-between gap-8">
                         {
                             features.map((feature, index) => (
                                 <div key={index} className='flex items-start space-x-4'>
@@ -42,7 +60,7 @@ function PurposeSection() {
                                 
                             ))
                         }
-                    </div>
+                    </motion.div>
                 </div>
             </div>
         </section>
