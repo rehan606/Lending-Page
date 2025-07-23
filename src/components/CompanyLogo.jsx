@@ -9,7 +9,7 @@ import sitepoint from "../assets/sitepoint.png"
 const CompanyLogo = () => {
     const logos = [slack, amazon, woocommerce, meundies, sitepoint]
     return (
-        <div className='w-full container overflow-hidden mx-auto gap-8 flex sm:flex-row flex-col sm:items-center items-start'>
+        <div className='w-full container overflow-hidden mx-auto gap-8 flex sm:flex-row flex-col sm:items-center items-start pb-10'>
             <div className='w-[300px] shrink-0 text-gray-600 border-l-4 border-blue-500 bg-white py-2 px-5 z-10 sm:text-base text-xl font-semibold text-left'>
                 Proud partner at <br /> Hubspot & Segment
             </div>
