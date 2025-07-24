@@ -28,6 +28,7 @@ A professional, responsive, and animated landing page built with **React**, **Ta
 
 ## 📁 Folder Structure
 
+```base
 React-landing-page/
 │
 ├── public/
@@ -40,7 +41,7 @@ React-landing-page/
 │ ├── index.css
 ├── package.json
 └── tailwind.config.js
-
+```
 
 ## 🚀 Getting Started
 
