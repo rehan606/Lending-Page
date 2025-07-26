@@ -6,9 +6,7 @@ A professional, responsive, and animated landing page built with **React**, **Ta
 
 👉 [View Live Website](https://modernlandingp.netlify.app/)
 
-## 🖼️ Screenshots
 
-![Landing Page Screenshot](./screenshot.png)
 
 ## ✨ Features
 
